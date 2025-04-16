@@ -1,0 +1,4 @@
+(executable
+ (name test_trading)
+ (modules test_trading)
+ (libraries trading)) 

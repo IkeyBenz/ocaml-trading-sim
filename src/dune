@@ -1,0 +1,8 @@
+(executable
+ (name example)
+ (modules example)
+ (libraries trading))
+
+(library
+ (name trading)
+ (modules trading)) 
