@@ -20,27 +20,45 @@ A simple algorithmic trading simulator written in OCaml that implements a moving
 
 - OCaml 4.14.0 or later
 - Dune build system
+- OPAM (OCaml Package Manager)
 
-## Building and Running
+## Installation
 
-1. Install dependencies:
+1. Install OPAM:
+```bash
+brew install opam  # For macOS
+```
+
+2. Initialize OPAM:
+```bash
+opam init
+```
+
+3. Update your shell environment:
+```bash
+eval $(opam env --switch=default)
+```
+
+4. Install Dune:
 ```bash
 opam install dune
 ```
 
-2. Build the project:
+## Building and Running
+
+1. Build the project:
 ```bash
 dune build
 ```
 
-3. Run the example:
+2. Run the example:
 ```bash
-dune exec example
+dune exec ./_build/default/src/example.exe
 ```
 
-4. Run tests:
+3. Run the tests:
 ```bash
-dune exec test_trading
+dune exec ./_build/default/tests/test_trading.exe
 ```
 
 ## How It Works
